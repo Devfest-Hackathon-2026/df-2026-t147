@@ -1,0 +1,93 @@
+// 文言はここに集約。アイテムの説明文はデザイン（Figma）の文言。
+export const BUDDY_NAME = 'ハミー'
+
+export const S = {
+  appName: 'ねぇ、できた',
+  tapStart: 'ー TAPでスタート ー',
+  demoBadge: 'デモ用データ',
+  setupTitle: 'はじめに おうちのひとが きめてね',
+  nickname: 'おこさまの よびな',
+  gender: 'おこさまは',
+  boy: 'おとこのこ',
+  girl: 'おんなのこ',
+  ageBand: 'ねんれい',
+  buddyName: 'なかまの なまえ',
+  pin: 'おやの パスワード（4けた）',
+  start: 'はじめる',
+  dayLabel: 'にちめ',
+  tabBrush: 'はみがき',
+  tabGrow: 'そだてる',
+  tabItems: 'アイテム',
+  gate: 'おとなのかた（ながおし）',
+  selfStarted: 'じぶんから はじめた？',
+  selfYes: 'うん！',
+  selfNo: 'ううん',
+  back: 'もどる',
+  qNext: 'つぎへ',
+  qFinish: 'おしまい',
+  tts: 'よむ',
+  doneLead: 'じょうずに',
+  doneMain: 'できたね',
+  newItem: 'アイテム',
+  showParent: 'おうちのひとに みせてね',
+  receive: '受け取る',
+  hatchIntro: `はじめまして！
+${BUDDY_NAME}だよ。
+よろしくね！`,
+  grew: 'おおきく なったよ！ ホームで みてね',
+  pinLabel: 'パスワード　4桁',
+  parentBack: '戻る',
+  pinWrong: 'パスワードが違います',
+  menuTitle: '保護者の方',
+  menuApproval: '今日の承認',
+  menuWeekly: '今週の傾向',
+  menuSettings: '設定',
+  approveTitle: '今日の承認',
+  praiseTitle: '今日のほめどころ',
+  praiseNote: '記録から数えられることだけを載せています。',
+  approveWrite: 'ひとこと（書かなくても大丈夫です）',
+  approvePlaceholder: 'ここに、お子さんへの言葉を書けます',
+  hintBtn: '言葉に迷ったら',
+  hintNext: 'ほかの例を見る',
+  hintUse: 'これを使う',
+  hintNote: '例です。そのまま使っても、書き換えても構いません。',
+  approveWatched: '子どもの前で見届けた',
+  approveBtn: '承認する',
+  approveNone: '今日の記録がまだありません',
+  approved: '承認しました',
+  weeklyTitle: '今週の傾向',
+  weeklyNone: 'まだ回答が少ないため、傾向は表示しません（4日分以上で表示）',
+  weeklyBrush: 'はみがき',
+  weeklySelf: '自分から',
+  weeklyLongest: '最長の連続',
+  weeklyPrev: '先週',
+  weeklyNote: 'これは回答の集計です。原因の断定ではありません。',
+  settingsTitle: '設定',
+  deleteAll: 'データをすべて削除',
+  deleteConfirm: 'この家族のデータをすべて削除します。よろしいですか？',
+  give: 'あげる',
+  noItems: 'まだ アイテムが ないよ。ほめてもらって 3にちで もらえるよ！',
+  itemGet: 'アイテムを ゲット！',
+  itemGetBack: 'ホームへ',
+  fedMsg: 'ありがとう！ おいしいよ！',
+  alreadyDone: 'きょうは もう できたよ！ また あしたね',
+  praised: 'ほめてもらえて うれしい！',
+}
+
+export const ITEMS: Record<string, { name: string; text: string }> = {
+  calcium: { name: 'カルシウム', text: 'さかなのホネやぎゅうにゅうに入ってるよ！\nかたくてつよい「は」になるためのざいりょう' },
+  phosphorus: { name: 'リン', text: 'たまごやおさかなにはいってるよ！\n「は」のかたいぶぶんをつくって つよくするよ。' },
+  vitd: { name: 'ビタミンD', text: 'きのこやさかなにはいってるよ！\nカルシウムをからだにいれるおてつだいをするよ。' },
+  vitc: { name: 'ビタミンC', text: 'イチゴやキウイにはいってるよ！\n「は」をささえるはぐきに げんきをわたすよ。' },
+}
+// アイテムをあげた時の固定のセリフ（AIは使わない）
+export const ITEM_LINES: Record<string, string> = {
+  calcium: 'ごくごく… カルシウムで\nはが つよく なったよ！',
+  phosphorus: 'もぐもぐ… リンで\nはが かたく なったよ！',
+  vitd: 'ぽかぽか… ビタミンDで\nカルシウムが はいったよ！',
+  vitc: 'しゃきっ！ ビタミンCで\nはぐきが げんきに なったよ！',
+}
+export const ITEM_ORDER = ['calcium', 'phosphorus', 'vitd', 'vitc']
+export const ITEM_COLOR: Record<string, string> = { calcium: '#2FD3B6', phosphorus: '#E8A010', vitd: '#7ED321', vitc: '#FF4B4B' }
+
+export const suffix = (g: string) => (g === 'boy' ? 'くん' : 'ちゃん')
