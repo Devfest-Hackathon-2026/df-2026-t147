@@ -32,3 +32,12 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 *.log
+
+# ねぇ、できた 追加分
+frontend/dist/
+*.json.key
+data/
+.pytest_cache/
+*.mp4
+*.pdf
+*.zip
